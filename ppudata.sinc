@@ -1,0 +1,819 @@
+tbl_BG_screens_LO:.BYTE 1               ; 834Cr
+                .BYTE <ppudata_MAINMENU					; 1
+                .BYTE <ppudata_HISCORE 					; 2
+                .BYTE <ppudata_PLAYERSGETREADY 			; 3
+                .BYTE <tbl_PPUDATA04 					; 4
+                .BYTE <tbl_PPUDATA05 					; 5
+                .BYTE <ppudata_HIGHSCORE 				; 6
+                .BYTE <tbl_PPUDATA07 					; 7
+                .BYTE <tbl_PPUDATA08 					; 8
+                .BYTE <tbl_PPUDATA09 					; 9
+                .BYTE <tbl_PPUDATA10 					; 0a
+                .BYTE <ppudata_INGAME_BASE 				; 0b
+                .BYTE <tbl_PPUDATA12 					; 0c
+                .BYTE <tbl_PPUDATA13 					; 0d
+                .BYTE <tbl_PPUDATA14 					; 0e
+                .BYTE <tbl_PPUDATA15 					; 0f
+                .BYTE <tbl_PPUDATA16 					; 10
+                .BYTE <tbl_PPUDATA17 					; 11
+                .BYTE <tbl_PPUDATA18 					; 12
+                .BYTE <tbl_PPUDATA19 					; 13
+                .BYTE <tbl_PPUDATA20 					; 14
+                .BYTE <tbl_PPUDATA21 					; 15
+                .BYTE <tbl_PPUDATA22 					; 16
+                .BYTE <tbl_PPUDATA23 					; 17
+                .BYTE <tbl_PPUDATA24 					; 18
+                .BYTE <tbl_PPUDATA25 					; 19
+                .BYTE <tbl_PPUDATA26 					; 1a
+                .BYTE <tbl_PPUDATA27 					; 1b
+                .BYTE <tbl_PPUDATA28 					; 1c
+                .BYTE <tbl_PPUDATA29 					; 1d
+                .BYTE <tbl_PPUDATA30 					; 1e
+                .BYTE <tbl_PPUDATA31 					; 1f
+                .BYTE <tbl_PPUDATA32 					; 20
+                .BYTE <tbl_PPUDATA33 					; 21
+                .BYTE <tbl_PPUDATA34 					; 22
+                .BYTE <tbl_PPUDATA35 					; 23
+                .BYTE <tbl_PPUDATA36 					; 24
+                .BYTE <tbl_PPUDATA37 					; 25
+                .BYTE <tbl_PPUDATA38 					; 26
+                .BYTE <tbl_PPUDATA39 					; 27
+                .BYTE <tbl_PPUDATA40 					; 28
+                .BYTE <tbl_PPUDATA41 					; 29
+                .BYTE <tbl_PPUDATA42 					; 2a
+                .BYTE <tbl_PPUDATA43 					; 2b
+                .BYTE <tbl_PPUDATA44 					; 2c
+                .BYTE <tbl_PPUDATA45 					; 2d
+                .BYTE <tbl_PPUDATA46 					; 2e
+                .BYTE <tbl_PPUDATA47 					; 2f
+                .BYTE <tbl_PPUDATA48 					; 30
+                .BYTE <tbl_PPUDATA49 					; 31
+                .BYTE <tbl_PPUDATA50 					; 32
+                .BYTE <tbl_PPUDATA51 					; 33
+                .BYTE <tbl_PPUDATA52 					; 34
+                .BYTE <tbl_PPUDATA53 					; 35
+                .BYTE <tbl_PPUDATA54 					; 36
+                .BYTE <tbl_PPUDATA55 					; 37
+                .BYTE <tbl_PPUDATA56 					; 38
+                .BYTE <tbl_PPUDATA57 					; 39
+                .BYTE <tbl_PPUDATA58 					; 3a
+                .BYTE <tbl_PPUDATA59 					; 3b
+                .BYTE <tbl_PPUDATA60 					; 3c
+                .BYTE <tbl_PPUDATA61 					; 3d
+                .BYTE <tbl_PPUDATA62 					; 3e
+                .BYTE <tbl_PPUDATA63 					; 3f
+                .BYTE <tbl_PPUDATA64 					; 40
+                .BYTE <tbl_PPUDATA65 					; 41
+                .BYTE <tbl_PPUDATA66 					; 42
+                .BYTE <tbl_PPUDATA67 					; 43
+                .BYTE <tbl_PPUDATA68 					; 44
+                .BYTE <tbl_PPUDATA69 					; 45
+                .BYTE <tbl_PPUDATA70 					; 46
+                .BYTE <tbl_PPUDATA71 					; 47
+                .BYTE <tbl_PPUDATA72 					; 48
+                .BYTE <tbl_PPUDATA73 					; 49
+                .BYTE <tbl_PAL_BONUS_LEVEL 				; 4a
+                .BYTE <tbl_PPUDATA75 					; 4b
+                .BYTE <tbl_PPUDATA76 					; 4c
+                .BYTE <tbl_PPUDATA77 					; 4d
+                .BYTE <tbl_PPUDATA78 					; 4e
+                .BYTE <tbl_PPUDATA79 					; 4f
+                .BYTE <tbl_PPUDATA80 					; 50
+                .BYTE <tbl_PPUDATA81 					; 51
+                .BYTE <ppudata_DISTRIBUTION 					; 52
+                .BYTE <tbl_PPUDATA83 					; 53
+                .BYTE <tbl_PPUDATA84 					; 54
+                .BYTE <tbl_CUSTOMSCREEN_00 				; 85 ($55)
+
+tbl_BG_screens_HI:.BYTE 3               ; 8351r
+                .BYTE >ppudata_MAINMENU
+                .BYTE >ppudata_HISCORE
+                .BYTE >ppudata_PLAYERSGETREADY
+                .BYTE >tbl_PPUDATA04
+                .BYTE >tbl_PPUDATA05
+                .BYTE >ppudata_HIGHSCORE
+                .BYTE >tbl_PPUDATA07
+                .BYTE >tbl_PPUDATA08
+                .BYTE >tbl_PPUDATA09
+                .BYTE >tbl_PPUDATA10
+                .BYTE >ppudata_INGAME_BASE
+                .BYTE >tbl_PPUDATA12
+                .BYTE >tbl_PPUDATA13
+                .BYTE >tbl_PPUDATA14
+                .BYTE >tbl_PPUDATA15
+                .BYTE >tbl_PPUDATA16
+                .BYTE >tbl_PPUDATA17
+                .BYTE >tbl_PPUDATA18
+                .BYTE >tbl_PPUDATA19
+                .BYTE >tbl_PPUDATA20
+                .BYTE >tbl_PPUDATA21
+                .BYTE >tbl_PPUDATA22
+                .BYTE >tbl_PPUDATA23
+                .BYTE >tbl_PPUDATA24
+                .BYTE >tbl_PPUDATA25
+                .BYTE >tbl_PPUDATA26
+                .BYTE >tbl_PPUDATA27
+                .BYTE >tbl_PPUDATA28
+                .BYTE >tbl_PPUDATA29
+                .BYTE >tbl_PPUDATA30
+                .BYTE >tbl_PPUDATA31
+                .BYTE >tbl_PPUDATA32
+                .BYTE >tbl_PPUDATA33
+                .BYTE >tbl_PPUDATA34
+                .BYTE >tbl_PPUDATA35
+                .BYTE >tbl_PPUDATA36
+                .BYTE >tbl_PPUDATA37
+                .BYTE >tbl_PPUDATA38
+                .BYTE >tbl_PPUDATA39
+                .BYTE >tbl_PPUDATA40
+                .BYTE >tbl_PPUDATA41
+                .BYTE >tbl_PPUDATA42
+                .BYTE >tbl_PPUDATA43
+                .BYTE >tbl_PPUDATA44
+                .BYTE >tbl_PPUDATA45
+                .BYTE >tbl_PPUDATA46
+                .BYTE >tbl_PPUDATA47
+                .BYTE >tbl_PPUDATA48
+                .BYTE >tbl_PPUDATA49
+                .BYTE >tbl_PPUDATA50
+                .BYTE >tbl_PPUDATA51
+                .BYTE >tbl_PPUDATA52
+                .BYTE >tbl_PPUDATA53
+                .BYTE >tbl_PPUDATA54
+                .BYTE >tbl_PPUDATA55
+                .BYTE >tbl_PPUDATA56
+                .BYTE >tbl_PPUDATA57
+                .BYTE >tbl_PPUDATA58
+                .BYTE >tbl_PPUDATA59
+                .BYTE >tbl_PPUDATA60
+                .BYTE >tbl_PPUDATA61
+                .BYTE >tbl_PPUDATA62
+                .BYTE >tbl_PPUDATA63
+                .BYTE >tbl_PPUDATA64
+                .BYTE >tbl_PPUDATA65
+                .BYTE >tbl_PPUDATA66
+                .BYTE >tbl_PPUDATA67
+                .BYTE >tbl_PPUDATA68
+                .BYTE >tbl_PPUDATA69
+                .BYTE >tbl_PPUDATA70
+                .BYTE >tbl_PPUDATA71
+                .BYTE >tbl_PPUDATA72
+                .BYTE >tbl_PPUDATA73
+                .BYTE >tbl_PAL_BONUS_LEVEL
+                .BYTE >tbl_PPUDATA75
+                .BYTE >tbl_PPUDATA76
+                .BYTE >tbl_PPUDATA77
+                .BYTE >tbl_PPUDATA78
+                .BYTE >tbl_PPUDATA79
+                .BYTE >tbl_PPUDATA80
+                .BYTE >tbl_PPUDATA81
+                .BYTE >ppudata_DISTRIBUTION
+                .BYTE >tbl_PPUDATA83
+                .BYTE >tbl_PPUDATA84
+                .BYTE >tbl_CUSTOMSCREEN_00
+
+; ---------------------------------------------------------------------------
+ppudata_INGAME_BASE:.BYTE $3F           
+                .BYTE $10               ; $3F10 - PPU address where we store data (below)
+                .BYTE $10               ; 16 ($10) bytes of sprites ($3F10) palette
+                .BYTE $0F, $16, $12, $28, $0F, $12, $16, $28, $0F, $17, $11, $35, $0F, $17, $11, $2B
+                .BYTE $23 ; #           ; $23C0 - destination PPU address
+                .BYTE $C0 ; L
+                .BYTE $40+$8            ; 8 bytes of palette (first 4 tile rows)
+                                        ; to address $23C0 (PPU palette offset)
+                                        ; $40 = 1: %($48 and %00111111)
+                .BYTE $AA ; к
+                .BYTE $23, $F8          ; $23F8 - destination PPU address
+                .BYTE $40+$2
+                .BYTE $55
+                .BYTE $23, $FE
+                .BYTE $40+$2
+                .BYTE $AA ; к
+                .BYTE $20, $00
+                .BYTE $40+$20
+                .BYTE $9A ; Ъ
+                .BYTE $20, $20
+                .BYTE $40+$20
+                .BYTE $9A ; Ъ
+                .BYTE $23, $60
+                .BYTE $09
+                .BYTE $31, $32, $31, $32, $31, $32, $31, $32, $33
+                .BYTE $23, $88
+                .BYTE $01
+                .BYTE $47
+                .BYTE $23, $A8
+                .BYTE   1
+                .BYTE $46 ; F
+                .BYTE $23, $77
+                .BYTE   9
+                .BYTE $30, $31, $32, $31, $32, $31, $32, $31, $32
+                .BYTE $23, $97
+                .BYTE   1
+                .BYTE $40 ; @
+                .BYTE $23, $B7
+                .BYTE   1
+                .BYTE $41 ; A
+                .BYTE $2B, $DA
+                .BYTE $40+$4
+                .BYTE $05
+                .BYTE $2B, $EA
+                .BYTE $40+$4
+                .BYTE $AA ; к
+                .BYTE $2B, $F0
+                .BYTE $40+$10
+                .BYTE $AA ; к
+                .BYTE $28, 0
+                .BYTE $09
+                .BYTE $43, $44, $43, $44, $43, $44, $43, $44, $45
+                .BYTE $28, $17
+                .BYTE $09
+                .BYTE $42, $43, $44, $43, $44, $43, $44, $43, $44
+                .BYTE $2A, $A0
+                .BYTE $08
+                .BYTE $32, $31, $32, $31, $32, $31, $32, $33
+                .BYTE $2A, $B8
+                .BYTE $08
+                .BYTE $30, $31, $32, $31, $32, $31, $32, $31
+                .BYTE $2A, $C0
+                .BYTE $08
+                .BYTE $4C, $4B, $4C, $4B, $4C, $4B, $4C, $4D
+                .BYTE $2A, $D8
+                .BYTE $08
+                .BYTE $4A, $4B, $4C, $4B, $4C, $4B, $4C, $4B
+                .BYTE $2A, $E0
+                .BYTE $20
+                .BYTE $52, $53, $54, $55, $52, $53, $54, $55, $58, $59, $5A, $5B, $58, $59, $5A, $5B
+                .BYTE $58, $59, $5A, $5B, $58, $59, $5A, $5B, $52, $53, $54, $55, $52, $53, $54, $55
+                .BYTE $2B, $00
+                .BYTE $0B
+                .BYTE $60, $61, $62, $63, $60, $61, $62, $63, $5C, $5D, $5E
+                .BYTE $2B, $0C
+                .BYTE $40+$8
+                .BYTE $24 ; $
+                .BYTE $2B, $0B
+                .BYTE $03
+                .BYTE $8C, $8D, $24
+                .BYTE $2B, $14
+                .BYTE $0C
+                .BYTE $5C, $5D, $5E, $5F, $60, $61, $62, $63, $60, $61, $62, $63
+                .BYTE $2B, $20
+                .BYTE $20
+                .BYTE $5C, $5D, $5E, $5F, $5C, $5D, $5E, $5F, $5C, $5D, $5E, $5F, $5C, $5D, $5E, $5F
+                .BYTE $5C, $5D, $5E, $5F, $5C, $5D, $5E, $5F, $5C, $5D, $5E, $5F, $5C, $5D, $5E, $5F
+                .BYTE $2B, $40
+                .BYTE $20
+                .BYTE $5C, $5D, $5E, $5F, $5C, $5D, $5E, $5F, $5C, $5D, $5E, $5F, $5C, $5D, $5E, $5F
+                .BYTE $5C, $5D, $5E, $5F, $5C, $5D, $5E, $5F, $5C, $5D, $5E, $5F, $5C, $5D, $5E, $5F
+                .BYTE $2B, $60
+                .BYTE $20
+                .BYTE $5C, $5D, $5E, $5F, $5C, $5D, $5E, $5F, $5C, $5D, $5E, $5F, $5C, $5D, $5E, $5F
+                .BYTE $5C, $5D, $5E, $5F, $5C, $5D, $5E, $5F, $5C, $5D, $5E, $5F, $5C, $5D, $5E, $5F
+                .BYTE $00               ; EOF data marker
+tbl_PPUDATA12:  .BYTE $21, $EB          ; 82ACt 8301t
+                .BYTE $0A
+                .BYTE $34, $35, $36, $35, $36, $35, $36, $35, $36, $37
+                .BYTE $00               ; EOF data marker
+tbl_PPUDATA13:  .BYTE $21, $28          ; 82ADt 8302t
+                .BYTE $04
+                .BYTE $34, $35, $36, $37
+                .BYTE $21, $34
+                .BYTE $04
+                .BYTE $34, $35, $36, $37
+                .BYTE $00               ; EOF data marker
+tbl_PPUDATA14:  .BYTE $20, $EB          ; 82AEt 8303t
+                .BYTE  $A
+                .BYTE $34, $35, $36, $35, $36, $35, $36, $35, $36, $37
+                .BYTE $21, $E0
+                .BYTE   4
+                .BYTE $36, $35, $36, $37
+                .BYTE $21, $FC
+                .BYTE   4
+                .BYTE $34, $35, $36, $35
+                .BYTE $22 ; "
+                .BYTE $87 ; З
+                .BYTE   5
+                .BYTE $34, $35, $36, $35, $37
+                .BYTE $22, $94
+                .BYTE   5
+                .BYTE $34, $35, $36, $35, $37
+                .BYTE $23, $AF
+                .BYTE   2
+                .BYTE $34, $37
+                .BYTE   0               ; EOF data marker
+tbl_PPUDATA15:  .BYTE $20, $AB          ; 82AFt 8304t
+                .BYTE   3
+                .BYTE $34, $B8, $37
+                .BYTE $20, $CC
+                .BYTE $80+4
+                .BYTE $B9, $B9, $B9, $BA
+                .BYTE $21, $73
+                .BYTE 3
+                .BYTE $34, $B8, $37
+                .BYTE $21, $94
+                .BYTE $80+4
+                .BYTE $B9, $B9, $B9, $BA
+                .BYTE $22, $2B
+                .BYTE   3
+                .BYTE $34, $B8, $37
+                .BYTE $22, $4C
+                .BYTE $80+4
+                .BYTE $B9, $B9, $B9, $BA
+                .BYTE   0               ; EOF data marker
+tbl_PPUDATA16:  .BYTE $21, $08, $03, $34, $B8, $37, $21, $29, $C6, $B9, $21, $E9, $01, $BA, $21, $14
+                                        ; 82B0t 8305t
+                .BYTE $03, $34, $B8, $37, $21, $35, $C6, $B9, $21, $F5, $01, $BA, $22, $4E, $03, $34
+                .BYTE $B8, $37, $22, $6F, $83, $B9, $B9, $BA, $00
+tbl_PPUDATA17:  .BYTE $21, $45, $03, $34, $B8, $37, $21, $66, $C8, $B9, $22, $66, $01, $BA, $21, $58
+                                        ; 82B1t 8306t
+                .BYTE $03, $34, $B8, $37, $21, $79, $C8, $B9, $22, $79, $01, $BA, $22, $AE, $04, $34
+                .BYTE $35, $36, $37, $00
+tbl_PPUDATA18:  .BYTE $21, $2A, $0C, $34, $35, $36, $35, $36, $35, $36, $35, $36, $35, $36, $37, $22
+                                        ; 82B2t 8307t
+                .BYTE $44, $08, $34, $35, $36, $35, $36, $35, $36, $37, $22, $54, $08, $34, $35, $36
+                .BYTE $35, $36, $36, $36, $37, $00
+tbl_PPUDATA19:  .BYTE $20, $E4, $04, $34, $35, $36, $37, $20, $F8, $04, $34, $35, $36, $37, $21, $0A
+                                        ; 82B3t 8308t
+                .BYTE $02, $34, $37, $21, $2A, $C6, $B9, $21, $EA, $01, $BA, $21, $14, $02, $34, $37
+                .BYTE $21, $35, $C6, $B9, $21, $F5, $01, $BA, $22, $60, $06, $36, $35, $36, $35, $36
+                .BYTE $37, $22, $7A, $06, $34, $35, $36, $35, $36, $35, $00
+tbl_PPUDATA20:  .BYTE $21, $48, $04, $34, $35, $36, $37, $21, $53, $04, $34, $35, $36, $37, $21, $6E
+                                        ; 82B4t 8309t
+                .BYTE $03, $34, $B8, $37, $21, $8F, $C7, $B9, $22, $6F, $01, $BA, $00
+tbl_PPUDATA21:  .BYTE $21, $2A, $0C, $34, $35, $36, $35, $36, $35, $36, $35, $36, $35, $36, $37, $00
+                                        ; 82B5t 830At
+tbl_PPUDATA22:  .BYTE $21, $0D, $06, $34, $35, $36, $35, $36, $37, $21, $CA, $03, $34, $35, $37, $21
+                                        ; 82B6t 830Bt
+                .BYTE $D3, $03, $34, $35, $37, $00
+tbl_PPUDATA23:  .BYTE $21, $A7, $03, $34, $35, $37, $21, $B6, $03, $34, $35, $37, $22, $CF, $02, $34
+                                        ; 82B7t 830Ct
+                .BYTE $37, $00
+tbl_PPUDATA24:  .BYTE $21, $A4, $04, $34, $35, $36, $37, $21, $B8, $04, $34, $35, $36, $37, $00
+                                        ; 82B8t 830Dt
+tbl_PPUDATA25:  .BYTE $20, $CE, $03, $34, $B8, $37, $20, $EF, $84, $B9, $B9, $B9, $BA, $21, $C8, $03
+                                        ; 82B9t 830Et
+                .BYTE $34, $35, $37, $21, $D4, $03, $34, $35, $37, $22, $AE, $03, $34, $B8, $37, $22
+                .BYTE $CF, $82, $B9, $BA, $00
+tbl_PPUDATA26:  .BYTE $21, $E2, $04, $34, $35, $36, $37, $21, $FA, $04, $34, $35, $36, $37, $22, $6E
+                                        ; 82BAt 830Ft
+                .BYTE $04, $34, $35, $36, $37, $00
+tbl_PPUDATA27:  .BYTE $20, $CE, $03, $34, $B8, $37, $20, $EF, $C6, $B9, $21, $AF, $01, $BA, $22, $88
+                                        ; 82BBt 8310t
+                .BYTE $03, $34, $35, $37, $22, $96, $03, $34, $35, $37, $00
+tbl_PPUDATA28:  .BYTE $00               ; 82BCt 8311t
+tbl_PPUDATA29:  .BYTE $29, $6A, $0C, $34, $35, $36, $35, $36, $35, $36, $35, $36, $35, $36, $37, $00
+                                        ; 82BDt 8312t
+tbl_PPUDATA30:  .BYTE $29, $68, $04, $34, $35, $36, $37, $29, $74, $04, $34, $35, $36, $37, $29, $EE
+                                        ; 82BEt 8313t
+                .BYTE $04, $34, $35, $36, $37, $00
+tbl_PPUDATA31:  .BYTE $28, $CC, $08, $34, $35, $36, $35, $36, $35, $36, $37, $29, $25, $03, $34, $35
+                                        ; 82BFt 8314t
+                .BYTE $37, $29, $38, $03, $34, $35, $37, $2A, $09, $03, $34, $35, $37, $2A, $14, $03
+                .BYTE $34, $35, $37, $00
+tbl_PPUDATA32:  .BYTE $28, $C9, $03, $34, $B8, $37, $28, $EA, $85, $B9, $B9, $B9, $B9, $BA, $28, $D4
+                                        ; 82C0t 8315t
+                .BYTE $03, $34, $B8, $37, $28, $F5, $85, $B9, $B9, $B9, $B9, $BA, $00
+tbl_PPUDATA33:  .BYTE $28, $C6, $03, $34, $B8, $37, $28, $E7, $85, $B9, $B9, $B9, $B9, $BA, $28, $D8
+                                        ; 82C1t 8316t
+                .BYTE $03, $34, $B8, $37, $28, $F9, $85, $B9, $B9, $B9, $B9, $BA, $29, $6D, $06, $34
+                .BYTE $35, $36, $35, $36, $37, $00
+tbl_PPUDATA34:  .BYTE $28, $CF, $03, $34, $B8, $37, $28, $F0, $C4, $B9, $29, $70, $01, $BA, $29, $47
+                                        ; 82C2t 8317t
+                .BYTE $04, $34, $35, $36, $37, $29, $56, $04, $34, $35, $36, $37, $00
+tbl_PPUDATA35:  .BYTE $28, $CD, $06, $34, $35, $36, $35, $36, $37, $29, $40, $07, $35, $36, $35, $36
+                                        ; 82C3t 8318t
+                .BYTE $35, $36, $37, $29, $59, $07, $34, $35, $36, $35, $36, $35, $36, $00
+tbl_PPUDATA36:  .BYTE $28, $E6, $06, $34, $35, $36, $35, $36, $37, $28, $F4, $06, $34, $35, $36, $35
+                                        ; 82C4t 8319t
+                .BYTE $36, $37, $29, $EB, $0A, $34, $35, $36, $35, $36, $35, $36, $35, $36, $37, $00
+tbl_PPUDATA37:  .BYTE $28, $C7, $06, $34, $B8, $36, $35, $36, $37, $28, $E8, $C6, $B9, $29, $A8, $01
+                                        ; 82C5t 831At
+                .BYTE $BA, $28, $D3, $06, $34, $35, $36, $35, $B8, $37, $28, $F7, $C6, $B9, $29, $B7
+                .BYTE $01, $BA, $00
+tbl_PPUDATA38:  .BYTE $28, $C6, $06, $34, $35, $36, $35, $B8, $37, $28, $EA, $85, $B9, $B9, $B9, $B9
+                                        ; 82C6t 831Bt
+                .BYTE $BA, $28, $D4, $06, $34, $B8, $36, $35, $36, $37, $28, $F5, $85, $B9, $B9, $B9
+                .BYTE $B9, $BA, $29, $60, $05, $35, $36, $35, $36, $37, $29, $7B, $05, $34, $35, $36
+                .BYTE $35, $36, $00
+tbl_PPUDATA39:  .BYTE $28, $CE, $03, $34, $B8, $37, $28, $EF, $85, $B9, $B9, $B9, $B9, $BA, $29, $46
+                                        ; 82C7t 831Ct
+                .BYTE $05, $34, $35, $36, $35, $37, $29, $54, $05, $34, $35, $36, $35, $37, $00
+tbl_PPUDATA40:  .BYTE $28, $C2, $04, $34, $35, $B8, $37, $28, $E3, $85, $B9, $B9, $B9, $B9, $BA, $28
+                                        ; 82C8t 831Dt
+                .BYTE $DA, $04, $34, $35, $B8, $37, $28, $FC, $85, $B9, $B9, $B9, $B9, $BA, $29, $EC
+                .BYTE $08, $34, $35, $36, $35, $36, $35, $36, $37, $00
+tbl_PPUDATA41:  .BYTE $28, $E0, $09, $35, $36, $35, $36, $35, $36, $35, $36, $37, $28, $F7, $09, $34
+                                        ; 82C9t 831Et
+                .BYTE $35, $36, $35, $36, $35, $36, $35, $36, $29, $A0, $04, $36, $35, $36, $37, $29
+                .BYTE $BC, $04, $34, $35, $36, $35, $29, $EC, $08, $34, $35, $36, $35, $36, $35, $36
+                .BYTE $37, $00
+tbl_PPUDATA42:  .BYTE $28, $C4, $04, $34, $35, $36, $37, $28, $D8, $04, $34, $35, $36, $37, $29, $E9
+                                        ; 82CAt 831Ft
+                .BYTE $04, $34, $35, $36, $37, $29, $F4, $04, $34, $35, $36, $37, $00
+tbl_PPUDATA43:  .BYTE $29, $E9, $04, $34, $35, $36, $37, $29, $F3, $04, $34, $35, $36, $37, $00
+                                        ; 82CBt 8320t
+tbl_PPUDATA44:  .BYTE $28, $C6, $03, $34, $B8, $37, $28, $E7, $C6, $B9, $29, $A7, $01, $BA, $28, $D7
+                                        ; 82CCt 8321t
+                .BYTE $03, $34, $B8, $37, $28, $F8, $C6, $B9, $29, $B8, $01, $BA, $29, $EE, $04, $34
+                .BYTE $35, $36, $37, $00
+tbl_PPUDATA45:  .BYTE $23, $EB, $42, $FF, $23, $F3, $42, $FF, $00 ; 82CDt
+                                        ; 8322t
+tbl_PPUDATA46:  .BYTE $23, $D9, $43, $FF, $23, $E1, $43, $FF, $23, $E9, $43, $FF, $00
+                                        ; 82CEt 8323t
+tbl_PPUDATA47:  .BYTE $23, $D4, $42, $FF, $23, $DC, $42, $FF, $23, $E4, $42, $FF, $00
+                                        ; 82CFt 8324t
+tbl_PPUDATA48:  .BYTE $23, $E4, $42, $FF, $23, $EC, $42, $FF, $23, $F4, $42, $0F, $00
+                                        ; 82D0t 8325t
+tbl_PPUDATA49:  .BYTE $2B, $C2, $03, $CC, $FF, $FF, $2B, $CA, $03, $CC, $FF, $FF, $00
+                                        ; 82D1t 8326t
+tbl_PPUDATA50:  .BYTE $23, $CB, $43, $FF, $23, $D3, $43, $FF, 0 ; 82D2t 8327t
+tbl_PPUDATA51:  .BYTE $23, $DD, $42, $FF, $23, $E5, $42, $FF, $23, $E3, $42, $55, $23, $EB, $42, $55
+                                        ; 82D3t 8328t
+                .BYTE $00
+tbl_PPUDATA52:  .BYTE $23, $DB, $42, $FF, $23, $E3, $42, $0F, $2B, $C3, $42, $55, $00
+                                        ; 82D4t 8329t
+tbl_PPUDATA53:  .BYTE $23, $D0, $42, $FF, $23, $D8, $42, $FF, $23, $E0, $42, $0F, $23, $EB, $42, $55
+                                        ; 82D5t 832At
+                .BYTE $2B, $DA, $01, $88, $2B, $DD, $01, $22, $00
+tbl_PPUDATA54:  .BYTE $23, $E3, $42, $55, $2B, $C3, $42, $55, $2B, $C1, $42, $F0, $2B, $C9, $42, $FF
+                                        ; 82D6t 832Bt
+                .BYTE $2B, $D1, $42, $0F, $00
+tbl_PPUDATA55:  .BYTE $23, $E1, $46, $55, $23, $EB, $42, $FF, $23, $F3, $42, $FF, $00
+                                        ; 82D7t 832Ct
+tbl_PPUDATA56:  .BYTE $23, $D8, $43, $FF, $23, $E0, $43, $FF, $23, $EA, $44, $55, $00
+                                        ; 82D8t 832Dt
+tbl_PPUDATA57:  .BYTE $23, $DB, $43, $FF, $23, $E3, $43, $FF, $23, $E1, $01, $55, $23, $E6, $01, $55
+                                        ; 82D9t 832Et
+                .BYTE $2B, $C3, $42, $55, $00
+tbl_PPUDATA58:  .BYTE $23, $D9, $46, $55, $23, $E1, $01, $55, $23, $E2, $05, $FF, $55, $55, $55, $55
+                                        ; 82DAt 832Ft
+                .BYTE $23, $E9, $43, $FF, $23, $F1, $43, $0F, $00
+tbl_PPUDATA59:  .BYTE $23, $C9, $01, $55, $23, $D1, $01, $55, $23, $CD, $03, $CC, $FF, $FF, $23, $D5
+                                        ; 82DBt 8330t
+                .BYTE $43, $FF, $23, $DB, $42, $55, $2B, $D3, $42, $55, $2B, $DB, $42, $05, $00
+tbl_PPUDATA60:  .BYTE $23, $CB, $42, $55, $23, $DB, $42, $55, $23, $F2, $03, $CC, $FF, $FF, $23, $FA
+                                        ; 82DCt 8331t
+                .BYTE $03, $CC, $FF, $FF, $2B, $C8, $42, $55, $2B, $CE, $42, $55, $00
+tbl_PPUDATA61:  .BYTE $23, $C8, $43, $FF, $23, $D0, $43, $FF, $23, $E1, $42, $55, $23, $E5, $42, $55
+                                        ; 82DDt 8332t
+                .BYTE $23, $E9, $42, $55, $23, $ED, $42, $55, $2B, $CA, $44, $55, $2B, $D2, $44, $55
+                .BYTE $00
+tbl_PPUDATA62:  .BYTE $23, $D3, $42, $55, $23, $E1, $01, $55, $23, $E6, $01, $55, $23, $E9, $01, $55
+                                        ; 82DEt 8333t
+                .BYTE $23, $EE, $01, $55, $23, $DA, $03, $CC, $FF, $FF, $23, $E2, $43, $FF, $2B, $C3
+                .BYTE $42, $55, $00
+tbl_PPUDATA63:  .BYTE $23, $C3, $42, $5A, $23, $CB, $42, $55, $23, $DB, $42, $55, $23, $EB, $42, $55
+                                        ; 82DFt 8334t
+                .BYTE $23, $E1, $42, $FF, $23, $E9, $42, $FF, $2B, $C3, $42, $55, $2B, $D3, $42, $55
+                .BYTE $00
+tbl_PPUDATA64:  .BYTE $23, $C3, $42, $FA, $23, $CB, $42, $FF, $23, $D3, $42, $55, $23, $DB, $42, $55
+                                        ; 82E0t 8335t
+                .BYTE $23, $E0, $42, $55, $23, $E6, $01, $55, $23, $E8, $42, $55, $23, $EE, $01, $55
+                .BYTE $2B, $C3, $42, $55, $2B, $CB, $42, $55, $00
+tbl_PPUDATA65:  .BYTE $23, $C9, $01, $55, $23, $CE, $01, $55, $23, $D1, $01, $55, $23, $D6, $01, $55
+                                        ; 82E1t 8336t
+                .BYTE $23, $E0, $42, $55, $23, $E6, $42, $55, $2B, $C9, $42, $FF, $2B, $D1, $42, $FF
+                .BYTE $2B, $CB, $42, $55, $2B, $D3, $42, $55, $00
+tbl_PPUDATA66:  .BYTE $23, $D3, $42, $55, $23, $E9, $01, $55, $23, $EE, $01, $55, $2B, $C2, $03, $CC
+                                        ; 82E2t 8337t
+                .BYTE $FF, $FF, $2B, $CA, $03, $CC, $FF, $FF, $2B, $D3, $42, $55, $00
+tbl_PPUDATA67:  .BYTE $23, $C0, $42, $FA, $23, $C8, $42, $FF, $23, $D0, $42, $FF, $23, $D9, $42, $55
+                                        ; 82E3t 8338t
+                .BYTE $23, $DD, $42, $55, $23, $EB, $42, $55, $2B, $C3, $42, $55, $2B, $CB, $42, $55
+                .BYTE $2B, $D2, $44, $55, $00
+tbl_PPUDATA68:  .BYTE $23, $C8, $42, $55, $23, $CE, $42, $55, $23, $D1, $42, $55, $23, $D5, $42, $55
+                                        ; 82E4t 8339t
+                .BYTE $23, $D9, $42, $55, $23, $DD, $42, $55, $23, $E0, $42, $55, $23, $E6, $42, $55
+                .BYTE $23, $E8, $42, $55, $23, $EE, $42, $55, $23, $CB, $42, $FF, $23, $D3, $42, $FF
+                .BYTE $23, $DB, $42, $FF, $2B, $C9, $01, $55, $2B, $CE, $01, $55, $2B, $D3, $42, $55
+                .BYTE $00
+ppudata_MAINMENU:.BYTE $3F, $00         ; 82A1t 82F6t
+                                        ; Table format:
+                                        ; 1st byte = high PPU address
+                                        ; 2nd byte = low PPU address
+                                        ; 3rd byte = data size (in bytes)
+                                        ;    bit 7 = PPU increment 32 (1) or 1 (0)
+                                        ;    bit 6 = repeat N times one byte (1)
+                                        ;            read and write N bytes (0)
+                                        ; 4th and next bytes = data.
+                .BYTE $08
+                .BYTE $0F, $27, $30, $01, $0F, $1A, $1B, $01 ; All palettes patched for the NES.
+                .BYTE $23, $C9, $42, $55, $23, $D0, $70, $00, $20, $A4, $04, $F0, $F3, $F6, $F9, $20 ; ETC
+                .BYTE $C4, $04, $F1, $F4, $F7, $FA, $20, $E4, $05, $F2, $F5, $F8, $FB, $FC, $21, $23
+                .BYTE $16, $44, $49, $4F, $53, $59, $5D, $60, $66, $24, $6F, $74, $7F, $87, $8F, $98
+                .BYTE $9E, $A8, $AF, $B5, $BF, $C9, $D2, $21, $42, $17, $40, $45, $4A, $50, $54, $46
+                .BYTE $5E, $61, $67, $6B, $70, $75, $80, $88, $90, $99, $9F, $A9, $B0, $B6, $C0, $CA
+                .BYTE $67, $21, $62, $17, $41, $46, $4B, $51, $55, $5A, $46, $62, $68, $6C, $46, $76
+                .BYTE $81, $46, $46, $FD, $46, $46, $46, $B7, $46, $CB, $68, $21, $82, $17, $42, $46
+                .BYTE $4C, $46, $56, $46, $46, $63, $69, $6D, $71, $77, $82, $46, $46, $9A, $46, $46
+                .BYTE $46, $B8, $46, $CC, $D3, $21, $A2, $17, $43, $47, $4D, $46, $57, $5B, $46, $64
+                .BYTE $46, $46, $72, $46, $83, $46, $91, $9B, $A0, $46, $B1, $B9, $C1, $46, $D4, $21
+                .BYTE $C3, $1B, $48, $4E, $52, $58, $5C, $5F, $65, $6A, $6E, $73, $78, $84, $8A, $92
+                .BYTE $9C, $A1, $AA, $B2, $BA, $C2, $CD, $D5, $DA, $DF, $E5, $E8, $EC, $21, $ED, $11
+                .BYTE $79, $46, $46, $93, $46, $A2, $46, $46, $BB, $C3, $46, $D6, $DB, $E0, $46, $46
+                .BYTE $ED, $22, $0D, $11, $7A, $85, $8B, $94, $46, $A3, $AB, $B3, $BC, $C4, $CE, $D7
+                .BYTE $46, $E1, $46, $46, $EE, $22, $2D, $11, $7B, $46, $46, $95, $46, $A4, $AC, $46
+                .BYTE $46, $C5, $46, $46, $46, $E2, $46, $E9, $EF, $22, $4D, $10, $7C, $46, $8C, $96
+                .BYTE $46, $A5, $46, $46, $BD, $C6, $CF, $D8, $DC, $E3, $46, $68, $22, $6D, $10, $7D
+                .BYTE $46, $8D, $97, $47, $A6, $AD, $89, $BE, $C7, $D0, $46, $DD, $E4, $E6, $EA, $22
+                .BYTE $8D, $10, $7E, $86, $8E, $24, $9D, $A7, $AE, $B4, $24, $C8, $D1, $D9, $DE, $24
+                .BYTE $E7, $EB, $22, $E5, $0B, $12, $24, $17, $24, $1C, $24, $0E, $24, $1B, $24, $1D
+                .BYTE $22, $F3, $07, $0C, $24, $18, $24, $12, $24, $17, $23, $68, $0F, $25, $01, $09
+                .BYTE $08, $04, $24, $24, $17, $12, $17, $1D, $0E, $17, $0D, $18, $00
+ppudata_HISCORE:.BYTE $3F, $00          ; 82A2t 82F7t
+                .BYTE $10
+                .BYTE $0F, $30, $30, $30, $0F, $21, $21, $21, $0F, $16, $16, $16, $0F, $27, $27, $27
+                .BYTE $23, $C0, $7F, $00, $23, $C2, $44, $50, $23, $DA, $44, $0A, $23, $E2, $44, $0F
+                .BYTE $20, $6B, $0B, $12, $17, $1C, $0E, $1B, $1D, $24, $0C, $18, $12, $17, $20, $E7
+                .BYTE $06, $01, $24, $19, $15, $0A, $22, $20, $F1, $08, $01, $24, $0C, $1B, $0E, $0D
+                .BYTE $12, $1D, $21, $27, $06, $02, $24, $19, $15, $0A, $22, $21, $31, $08, $02, $24
+                .BYTE $0C, $1B, $0E, $0D, $12, $1D, $21, $89, $0E, $0D, $18, $24, $22, $18, $1E, $1B
+                .BYTE $24, $0B, $0E, $1C, $1D, $24, $2E, $21, $E8, $10, $1B, $0A, $17, $14, $24, $1C
+                .BYTE $0C, $18, $1B, $0E, $24, $24, $17, $0A, $16, $0E, $22, $28, $03, $01, $1C, $1D
+                .BYTE $22, $68, $03, $02, $17, $0D, $22, $A8, $03, $03, $1B, $0D, $22, $E8, $03, $04
+                .BYTE $1D, $11, $23, $28, $03, $05, $1D, $11, $00
+ppudata_PLAYERSGETREADY:.BYTE $3F, $00  ; 
+                .BYTE $08               ; 4 bytes of BG palette (PATCHED).
+                .BYTE $0F, $30, $30, $30
+                .BYTE $0F, $0F, $16, $0F
+                .BYTE $3F, $10
+                .BYTE $8               ; 8 bytes of sprites palette (PATCHED).
+                .BYTE $0F, $11, $2A, $2A, $0F, $16, $0F, $0F
+                .BYTE $23 ; #
+                .BYTE $C0 ; L           ; $23C0 - PPU adddress (palette grid) where we transfer next data:
+                .BYTE 40+$40
+                .BYTE $00               ; 40 bytes of 0
+                .BYTE $23
+                .BYTE $e8               ; $23e8
+                                        
+                .BYTE $40+8
+                .BYTE $50
+                .BYTE $20
+                .BYTE $C6               ; $20C6 (x,y location 6, 6)
+                                        ; PPU adddress where we transfer next data:
+                .BYTE 19                ; String 19 ($13) bytes length:
+                .BYTE _1, _P, _L, _A, _Y, _E, _R, _SPC, _V, _S, chr_dot, _C, _O, _M, _P, _U ;
+                .BYTE _T, _E, _R        ;
+                                        ; "string" of tiles
+                                        ; 1PLAYER VS. COMPUTER
+                .BYTE $21 ; !           ;
+                                        ; $2108 (x,y location 8, 8)
+                                        ; PPU adddress where we transfer next data:
+                .BYTE   8
+                .BYTE 15                ;
+                                        ; String 15 ($0f) bytes length:
+                .BYTE _P, _L, _A, _Y, _SPC, _O, _N, _E, _SPC, _S, _C, _R, _E, _E, _N ;
+                                        ; "PLAY ONE SCREEN"
+                .BYTE $21 ; !
+                .BYTE $64 ; e           ;
+                                        ; $2165 (5,11)
+                ;.BYTE 21                ; 21 bytes of "string"
+                ;.BYTE _P, _L, _E, _A, _S, _E, _SPC, _P, _U, _S, _H, _SPC, _SPC, _SPC, _SPC, _B ;
+                ;.BYTE _U, _T, _T, _O, _N ; "PLEASE PUSH BUTTON"
+                
+                .byte 24
+                .byte $19,$15,$0e,$0a,$1c,$0e,$24,$19,$1e,$1c,$11,$24,$1c,$1d,$0a,$1b,$1d,$24,$0b,$1e,$1d,$1d,$18,$17
+
+
+                .BYTE $22 ; "
+                .BYTE $27 ; &           ; $2226 (6,17)
+                .BYTE 18                ; str 18 bytes length
+                .BYTE _1, _P, _L, _A, _Y, _E, _R, _SPC, _V, _S, chr_dot, _1, _P, _L, _A, _Y ;
+                .BYTE _E, _R            ;
+                                        ; "1PLAYER VS.1PLAYER"
+                .BYTE $22 ; "
+                .BYTE $61 ; a           ; $2261 (1,19)
+                .BYTE 30
+                .BYTE _2, _P, _L, _A, _Y, _E, _R, _S, _SPC, _M, _U, _S, _T, _SPC, _U, _S
+                .BYTE _E, _SPC, _B, _O, _T, _H, _SPC, _S, _C, _R, _E, _E, _N, _S
+                .BYTE $22 ; "
+                .BYTE $C6 ;.BYTE $C5
+                .BYTE 20
+                ;.BYTE _P, _L, _E, _A, _S, _E, _SPC, _P, _U, _S, _H, _SPC, _SPC, _SPC, _SPC, _B
+                ;.BYTE _U, _T, _T, _O, _N
+                ; "DISABLED FOR THE NES"
+            		.byte $0d,$12,$1c,$0a,$0b,$15,$0e,$0d,$24,$0f,$18,$1b,$24,$1d,$11,$0e,$24,$17,$0e,$1c
+
+
+                .BYTE   0
+tbl_PPUDATA04:  .BYTE $3F, $00          ; 82A4t 82F9t
+                .BYTE $18
+                .BYTE $0F, $30, $30, $30, $0F, $16, $16, $16, $0F, $11, $11, $11, $0F, $11, $2A, $2A
+                .BYTE $0F, $11, $2A, $2A, $0F, $0F, $0F, $0F
+                .BYTE $23, $C0, $7F, 0, $23, $D1, 3, 4, 5, 1, $23, $D4, 3, 8, $A, 2
+                .BYTE $21, $26, $13, 1, $19, $15, $A, $22, $E, $1B, $24, $1F, $1C, $2A, $24, 1
+                .BYTE $19, $15, $A, $22, $E, $1B, $22, 1, $1E, 2, $19, $15, $A, $22, $E, $1B
+                .BYTE $1C, $24, $16, $1E, $1C, $1D, $24, $1E, $1C, $E, $24, $B, $18, $1D, $11, $24
+                .BYTE $1C, $C, $1B, $E, $E, $17, $1C, $22, $65, $15, $19, $15, $E, $A, $1C, $E
+                .BYTE $24, $19, $1E, $1C, $11, $24, $24, $24, $24, $B, $1E, $1D, $1D, $18, $17, 0
+tbl_PPUDATA05:  .BYTE $3F, $00          ; 82A5t 82FAt
+                .BYTE $20
+                .BYTE $0F, $30, $30, $30, $0F, $3C, $3C, $3C, $0F, $38, $38, $38, $0F, $27, $27, $27
+                .BYTE $0F, $16, $11, $19, $0F, $11, $16, $38, $0F, $17, $11, $26, $0F, $27, $11, $3C
+                .BYTE $23, $C0, $7F, $00, $23, $CA, $44, $50, $23, $DA, $44, $A0, $23, $E2, $44, $F0
+                .BYTE $21, $06, $18, $12, $1C, $24, $1B, $0E, $10, $12, $1C, $1D, $0E, $1B, $12, $17
+                .BYTE $10, $24, $12, $17, $12, $1D, $12, $0A, $15, $1C, $2A, $21, $8A, $0D, $19, $15
+                .BYTE $0E, $0A, $1C, $0E, $24, $24, $20, $0A, $12, $1D, $2A, $22, $28, $10, $1B, $0A
+                .BYTE $17, $14, $24, $1C, $0C, $18, $1B, $0E, $24, $24, $17, $0A, $16, $0E, $22, $68
+                .BYTE $03, $01, $1C, $1D, $22, $A8, $03, $02, $17, $0D, $22, $E8, $03, $03, $1B, $0D
+                .BYTE $23, $28, $03, $04, $1D, $11, $23, $68, $03, $05, $1D, $11, $00
+ppudata_HIGHSCORE:.BYTE $3F, $00        ; 82A6t 82FBt
+                .BYTE $20
+                .BYTE $0F, $30, $30, $30, $0F, $21, $38, $38, $0F, $16, $16, $16, $0F, $27, $27, $27
+                .BYTE $0F, $16, $11, $38, $0F, $11, $16, $38, $0F, $06, $01, $26, $0F, $27, $01, $3C
+                .BYTE $23, $C0, $7F, $00, $23, $CA, $44, $50, $23, $DA, $44, $A0, $23, $E2, $44, $F0
+                .BYTE $20, $87, $11, $17, $0A, $16, $0E, $24, $1B, $0E, $10, $12, $1C, $1D, $1B, $0A
+                .BYTE $1D, $12, $18, $17, $20, $CB, $08, $17, $0A, $16, $0E, $24, $2D, $2D, $2D, $21
+                .BYTE $27, $13, $0A, $24, $0B, $24, $0C, $24, $0D, $24, $0E, $24, $0F, $24, $10, $24
+                .BYTE $11, $24, $12, $24, $13, $21, $67, $13, $14, $24, $15, $24, $16, $24, $17, $24
+                .BYTE $18, $24, $19, $24, $1A, $24, $1B, $24, $1C, $24, $1D, $21, $A7, $14, $1E, $24
+                .BYTE $1F, $24, $20, $24, $21, $24, $22, $24, $23, $24, $2A, $24, $2D, $24, $26, $27
+                .BYTE $28, $2C, $21, $E8, $0F, $1B, $0E, $10, $12, $24, $1D, $12, $16, $0E, $2D, $2D
+                .BYTE $31, $03, $00, $30, $22, $28, $10, $1B, $0A, $17, $14, $24, $1C, $0C, $18, $1B
+                .BYTE $0E, $24, $24, $17, $0A, $16, $0E, $22, $68, $03, $01, $1C, $1D, $22, $A8, $03
+                .BYTE $02, $17, $0D, $22, $E8, $03, $03, $1B, $0D, $23, $28, $03, $04, $1D, $11, $23
+                .BYTE $68, $03, $05, $1D, $11, $00
+tbl_PPUDATA07:  .BYTE $3F, $00          ; 82A7t 82FCt
+                .BYTE $04
+                .BYTE $0F, $30, $30, $30
+                .BYTE $23, $C0, $7F, 0, $21, $65, $18, $19, $24, $15, $24, $E, $24, $A, $24, $1C
+                .BYTE $24, $E, $24, $24, $24, $24, $20, $24, $A, $24, $12, $24, $1D, $24, $2A, 0
+tbl_PPUDATA08:  .BYTE $3F, $00          ; 82A8t 82FDt
+                .BYTE   8
+                .BYTE $0F, $30, $30, $30, $0F, $27, $27, $27
+                .BYTE $23, $C0, $7F, $00, $23, $E5, $43, $05, $21, $AA, $0B, $12, $17, $1C, $0E, $1B
+                .BYTE $1D, $24, $0C, $18, $12, $17, $22, $03, $1A, $1D, $18, $24, $0C, $18, $17, $1D
+                .BYTE $12, $17, $1E, $0E, $24, $19, $15, $0A, $22, $24, $24, $1D, $12, $16, $0E, $31
+                .BYTE $01, $00, $30, $00
+tbl_PPUDATA09:  .BYTE $3F, $00          ; 82A9t 82FEt
+                .BYTE $08
+                .BYTE $0F, $30, $30, $30, $0F, $27, $27, $27
+                .BYTE $3F, $10
+                .BYTE $08
+                .BYTE $0F, $2A, $2A, $2A, $0F, $0F, $0F, $0F
+                .BYTE $23, $C0, $7F, $00, $23, $E5, $43, $05, $21, $A9, $0B, $19, $1E, $1C, $11, $24
+                .BYTE $0B, $1E, $1D, $1D, $18, $17, $22, $03, $1A, $1D, $18, $24, $0C, $18, $17, $1D
+                .BYTE $12, $17, $1E, $0E, $24, $19, $15, $0A, $22, $24, $24, $1D, $12, $16, $0E, $31
+                .BYTE $01, $00, $30, $00
+tbl_PPUDATA10:  .BYTE $3F, $00          ; 82AAt 82FFt
+                .BYTE $04
+                .BYTE $0F, $30, $30, $30
+                .BYTE $23, $D8, $50, 0, $21, $CA, $B, $19, $15, $E, $A, $1C, $E, $24, $20, $A
+                .BYTE $12, $1D, $22, $44, $17, $18, $19, $19, $18, $17, $E, $17, $1D, $32, $1C, $24
+                .BYTE $10, $A, $16, $E, $24, $12, $1C, $24, $18, $1F, $E, $1B, 0
+tbl_PPUDATA72:  .BYTE $29, $AB, $0A, $10, $0A, $16, $0E, $24, $24, $18, $1F, $0E, $1B, $00
+                                        ; 82E8t 833Dt
+tbl_PPUDATA73:  .BYTE $20, $00, $60, $9A, $20, $20, $60, $9A, $2B, $D0, $50, $FF, $2B, $E0, $50, $FF
+                                        ; 82E9t 833Et
+                .BYTE $2B, $F0, $50, $AA, $2B, $00, $60, $97, $2B, $20, $20, $98, $99, $98, $99, $98
+                .BYTE $99, $98, $99, $98, $99, $98, $99, $98, $99, $98, $99, $98, $99, $98, $99, $98
+                .BYTE $99, $98, $99, $98, $99, $98, $99, $98, $99, $98, $99, $2B, $40, $20, $99, $98
+                .BYTE $99, $98, $99, $98, $99, $98, $99, $98, $99, $98, $99, $98, $99, $98, $99, $98
+                .BYTE $99, $98, $99, $98, $99, $98, $99, $98, $99, $98, $99, $98, $99, $98, $2B, $60
+                .BYTE $20, $98, $99, $98, $99, $98, $99, $98, $99, $98, $99, $98, $99, $98, $99, $98
+                .BYTE $99, $98, $99, $98, $99, $98, $99, $98, $99, $98, $99, $98, $99, $98, $99, $98
+                .BYTE $99, $00
+tbl_PAL_BONUS_LEVEL:.BYTE $3F, $00      ; Palette
+                .BYTE $10
+                .BYTE $0F, $30, $01, $11, $0F, $28, $28, $28, $0F, $01, $18, $16, $0F, $30, $00, $10
+                .BYTE $00
+tbl_PPUDATA75:  .BYTE $3F, $00          ; Palette BG 
+                .BYTE $10
+                .BYTE $0F, $30, $11, $21, $0F, $27, $27, $27, $0F, $18, $19, $19, $0F, $30, $00, $10
+                .BYTE $00
+tbl_PPUDATA76:  .BYTE $3F, $00          ; Palette BG
+                .BYTE $10
+                .BYTE $0F, $30, $11, $21, $0F, $28, $28, $28, $0F, $18, $0B, $1B, $0F, $30, $00, $10
+                .BYTE $00
+tbl_PPUDATA77:  .BYTE $3F, $00          ; Palette BG
+                .BYTE $10
+                .BYTE $0F, $30, $11, $21, $0F, $28, $28, $28, $0F, $18, $0B, $1B, $0F, $30, $00, $10
+                .BYTE $00
+tbl_PPUDATA78:  .BYTE $3F, $10          ; Palette sprites bonus level (300 pts green balloons)
+                .BYTE $10
+                .BYTE $0F, $16, $12, $38, $0F, $12, $16, $38, $0F, $17, $27, $30, $0F, $2a, $30, $12
+                .BYTE $00
+tbl_PPUDATA79:  .BYTE $3F, $10          ; Palette sprites bonus level (500 pts orange balloons)
+                .BYTE $10
+                .BYTE $0F, $16, $11, $38, $0F, $12, $16, $38, $0F, $17, $27, $30, $0F, $27, $30, $3C
+                .BYTE $00
+tbl_PPUDATA80:  .BYTE $3F, $10          ; Palette sprites (700 pts red balloons)
+                .BYTE $10
+                .BYTE $0F, $16, $12, $38, $0F, $12, $16, $38, $0F, $17, $27, $30, $0F, $16, $30, $3C
+                .BYTE $00
+tbl_PPUDATA81:  .BYTE $3F, $00          ; Palette BG bonus level point scoring
+                .BYTE $10
+                .BYTE $0F, $30, $30, $30, $0F, $16, $27, $15, $0F, $16, $02, $21, $0F, $16, $16, $16
+                ;.BYTE $0F, $16, $12, $38, $0F, $12, $16, $38, $0F, $17, $18, $30, $0F, $15, $30, $27
+                .BYTE $23, $E8, $48, $55, 0
+tbl_PPUDATA69:  .BYTE $3F, $00          ; Palette BG
+                .BYTE $10
+                .BYTE $0F, $2A, $09, $07, $0F, $30, $27, $15, $0F, $30, $02, $21, $0F, $30, $00, $10
+                .BYTE $00
+tbl_PPUDATA70:  .BYTE $3F, $00          ; Palette BG
+                .BYTE $10
+                .BYTE $0F, $26, $06, $07, $0F, $30, $27, $15, $0F, $30, $02, $21, $0F, $30, $00, $10
+                .BYTE $00
+tbl_PPUDATA71:  .BYTE $3F, $00          ; Palette BG
+                .BYTE $10
+                .BYTE $0F, $19, $0B, $17, $0F, $30, $28, $25, $0F, $30, $11, $21, $0F, $30, $00, $10
+                .BYTE $00
+tbl_PPUDATA83:  .BYTE $3F, $00          ; Palette BG
+                .BYTE $10
+                .BYTE $0F, $3C, $01, $17, $0F, $30, $28, $25, $0F, $30, $11, $21, $0F, $30, $00, $10
+                .BYTE $00
+tbl_PPUDATA84:  .BYTE $3F, $00          ; Palette BG
+                .BYTE $10
+                .BYTE $0F, $38, $27, $17, $0F, $30, $28, $25, $0F, $30, $11, $21, $0F, $30, $00, $10
+                .BYTE $00
+ppudata_DISTRIBUTION:.BYTE $3F, $00     ; Service mode screen 
+                .BYTE $04
+                .BYTE $0F, $30, $30, $30
+                .BYTE $23, $C0
+                .BYTE $7F ; 
+                .BYTE   0
+                .BYTE $20, $AB
+                .BYTE  $C
+                .BYTE _D, _I, _S, _T, _R, _I, _B, _U, _T, _I, _O, _N
+                .BYTE $21, $47
+                .BYTE   9
+                .BYTE _M, _A, _I, _N, _SPC, _L, _E, _F, _T
+                .BYTE $21, $A7
+                .BYTE  $A
+                .BYTE $16, $A, $12, $17, $24, $1B, $12, $10, $11, $1D
+                .BYTE $22, 7
+                .BYTE   9
+                .BYTE _S, _U, _B, _SPC, _SPC, _L, _E, _F, _T
+                .BYTE $22, $67
+                .BYTE  $A
+                .BYTE _S, _U, _B, _SPC, _SPC, _R, _I, _G, _H, _T
+                .BYTE   0
+tbl_CUSTOMSCREEN_00:
+
+		; Init palette
+		.BYTE $3F, $00
+		.BYTE 16
+		.byte $0f,$05,$17,$28, $0f,$16,$27,$30, $0f,$15,$26,$37, $0f,$05,$15,$15
+				
+
+		.byte $23, $C0 ; $23C0 - PPU adddress (palette grid) where we transfer next data:
+                .BYTE $40+$3F ; 63 bytes (we can't use more because $40 + $80 is parameters)
+                .BYTE $FF     ; with index FF
+                .BYTE $23
+                .BYTE $FF               ; $23FF (last palette grid)
+                                        ; PPU adddress where we transfer next data:
+                .BYTE   1
+                .BYTE   $FF               ; just one FF
+                ; ====
+
+
+                .byte $20, $c3
+                .byte 26
+                ; "BALLOON FIGHT DIP SWITCHES"
+		.byte $0b,$0a,$15,$15,$18,$18,$17,$24,$0f,$12,$10,$11,$1d,$24,$0d,$12,$19,$24,$1c,$20,$12,$1d,$0c,$11,$0e,$1c
+
+		.byte $21, $24
+		.byte 5
+		.byte $15,$12,$1f,$0e,$1c ; "LIVES"
+
+		.byte $21, $64
+		.byte 10
+		.byte $0d,$12,$0f,$0f,$12,$0c,$1e,$15,$1d,$22 ; "DIFFICULTY"
+
+		.byte $21, $A4
+		.byte 11
+		.byte $0e,$17,$0e,$16,$22,$24,$1b,$0e,$10,$0e,$17
+
+		.byte $21, $E4
+		.byte 10
+		.byte $0b,$18,$17,$1e,$1c,$24,$15,$12,$0f,$0e ; "BONUS LIFE"
+
+		.byte $22, $24
+		.byte 8
+		.byte $0a,$26,$0b,$24,$16,$18,$0d,$0e ; "A/B MODE"
+		
+;		.byte $23, $4a
+;		.byte 12
+;		.byte $3d,$3e,$02,$08,$07,$3f,$3f,$24,$02,$00,$02,$01
+
+                .byte $23, $c8
+                .byte 8+$40
+                .byte $5f
+
+		.byte $23, $e9
+		.byte 6+$40
+		.byte $00
+
+;		.byte $23, $d8
+;		.byte 8+$40
+;		.byte $fa
+
+;		.byte $23, $e9
+;		.byte 6+$40
+;		.byte $0
+
+;		.byte $23, $f2
+;		.byte 4+$40
+;		.byte $55
+
+		.byte 0				
+
